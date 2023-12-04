@@ -1,0 +1,108 @@
+.body{
+    background: #a6b7da;
+    color: #161f32;
+    /*background: rgb(47,50,156);*/
+    /*background: linear-gradient(0deg, rgba(47,50,156,1) 0%, rgba(166,183,218,1) 100%);*/
+    /*background-repeat: no-repeat;*/
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.to-do{
+    display: flex;
+    justify-content: center;
+}
+#title{
+    color: #161f32;
+}
+.btn-add{
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    margin: 0.5em auto;
+    border: none;
+    background: #161f32;
+    color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+
+}
+.btn-add:hover{
+    transition: 3s;
+    background: rgb(22,31,50);
+    background: linear-gradient(90deg, rgba(22,31,50,1) 0%, rgba(55,65,87,1) 52%, rgba(166,183,218,1) 100%);
+}
+.btn-danger,.btn-danger:hover {
+    background: transparent;
+    border: none;
+    background-image: url("../assets/cat-remove.jpg")!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-success,.btn-success:hover{
+    background: transparent;
+    border: none;
+    background-image: url("../assets/cat-to-do.jpg")!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-warning,.btn-warning:hover{
+    background:transparent;
+    background-image: url("../assets/cat-success.jpg")!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #ffffff;
+    border: none;
+}
+.footer{
+    background: rgb(178,74,205);
+    background: linear-gradient(0deg, rgba(178,74,205,1) 0%, rgba(166,183,218,1) 100%);
+
+}
+.photos__wrapper{
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+}
+.cat-pick{
+    /*width: 14.28%;*/
+    height: 6em;
+}
+.img-success{
+    width: 30px;
+}
+@media screen and (min-width: 1600px) {
+    .cat-pick{
+    height: 10em;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .photos__wrapper{
+    justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .cat-pick{
+    height: 5em;
+    }
+}
+@media screen and (max-width: 992px) {
+    .cat-pick{
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .cat-pick{
+    height: 3em;
+    }
+}
+@media screen and (max-width: 576px) {
+    .cat-pick{
+    height: 2.3em;
+    }
+}
